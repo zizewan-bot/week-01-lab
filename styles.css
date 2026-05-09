@@ -1,77 +1,137 @@
-/* 基础设置 */
+:root {
+    --bg-color: #f4f1ea;
+    --card-color: #fffdf8;
+    --header-start: #1f4d3f;
+    --header-end: #3d7a63;
+    --accent-color: #c96f3b;
+    --text-color: #2f2a24;
+    --muted-color: #6f665d;
+    --border-color: #e4d8ca;
+}
+
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    color: #333;
+    padding: 24px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-/* Header 部分：使用 Flexbox 居中内容 */
 header {
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    background: linear-gradient(135deg, var(--header-start), var(--header-end));
     color: white;
     padding: 3rem 1rem;
-    border-radius: 12px;
+    border-radius: 16px;
     margin-bottom: 30px;
-    
-    /* FLEXBOX 核心代码 */
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     text-align: center;
+    box-shadow: 0 12px 30px rgba(31, 77, 63, 0.18);
 }
 
-/* 内容板块 */
+.header-container h1 {
+    margin-bottom: 0.4rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.08em;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 section {
-    background: white;
+    background: var(--card-color);
     padding: 25px;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 6px 14px rgba(47, 42, 36, 0.06);
 }
 
 h2 {
-    color: #1e3a8a;
-    border-left: 4px solid #3b82f6;
+    color: var(--header-start);
+    border-left: 4px solid var(--accent-color);
     padding-left: 15px;
     margin-top: 0;
 }
 
-/* 列表样式 */
+#about {
+    border-left: 6px solid #8db596;
+}
+
+#interests {
+    background: #fff8ef;
+}
+
+#contact {
+    background: #f8fbf8;
+}
+
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--accent-color);
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 
-/* 联系方式：使用 Flexbox 横向排列链接 */
 .contact-links {
     display: flex;
-    gap: 20px; /* 链接之间的间距 */
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 14px;
 }
 
 a {
-    color: #3b82f6;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a:hover {
+    color: var(--header-start);
     text-decoration: underline;
-    color: #1e3a8a;
+    transform: translateY(-1px);
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--muted-color);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .header-container h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
 }

@@ -1,12 +1,41 @@
-# Week 1 Lab - Personal Profile Page
+# Week 2 Lab Portfolio
 
-## About Me
-I am an entrepreneur and a student at California Science and Technology University (CSTU). I am taking this course to deepen my understanding of full-stack development, particularly to support my projects involving AI agents and game development.
+This repository upgrades my Week 1 static profile into a multi-page Next.js portfolio for Week 2.
 
-## Reflection
+## What Is Included
 
-1. **What was the most surprising thing you learned today?**
-   Although I've known about GitHub for a long time, today was the first time I actually used it. I encountered several environment setup hurdles, but solving them with the help of AI was an empowering experience that made the learning curve much smoother.
+- `app/`: Next.js App Router pages for Home, About, and Projects
+- `components/ProjectCard.tsx`: reusable React component for project cards
+- `js-practice/`: Part 1 JavaScript counter and to-do list exercise
+- `archive/week-01-static/`: preserved Week 1 HTML/CSS version
 
-2. **What is one question you still have going into Week 2?**
-   How can I better leverage AI tools to complete development tasks using natural language? I'm interested in exploring the most efficient workflows for "Prompt-to-Code" execution.
+## Week 2 Requirements Covered
+
+- Three navigable pages: Home, About, Projects
+- Shared navigation and footer in `app/layout.tsx`
+- Personal content based on my background, interests, and goals
+- `.map()` used for skills and project tags
+- `useState` filter on the Projects page
+- Reusable `ProjectCard` component
+- Tailwind CSS styling throughout
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000).
+
+## Part 1 JavaScript Practice
+
+Open `js-practice/index.html` in a browser to test:
+
+- Counter with increment, decrement, and reset buttons
+- To-do list that adds items dynamically
+
+## Notes
+
+- The original Week 1 static project is preserved in `archive/week-01-static/`
+- This project is designed to be a strong foundation for Mini Project 1

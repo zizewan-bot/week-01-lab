@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const focusAreas = [
-  "AI agent security",
+  "ONETOK.AI",
+  "Family Content Control App",
   "Indie game development",
-  "Product strategy",
 ];
 
 export default function HomePage() {

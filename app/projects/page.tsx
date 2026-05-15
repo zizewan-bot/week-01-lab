@@ -6,31 +6,17 @@ import { ProjectCard } from "@/components/ProjectCard";
 const projects = [
   {
     id: 1,
-    title: "ClawGuard",
+    title: "ONETOK.AI",
     description:
-      "A concept for monitoring AI agents, surfacing risky behavior, and making security signals easier to understand.",
-    tags: ["AI", "Security", "JavaScript"],
+      "A collaborative project management application that helps teams automate coordination. It can create bots for team chat groups, collect key updates from discussions, and automatically refresh the project board for members. The product is designed with a burn-after-reading approach, does not collect user data, and relies on user-authorized LLMs or agents for all generative output.",
+    tags: ["AI", "Productivity", "Automation"],
   },
   {
     id: 2,
-    title: "ONETOK Creator Tools",
+    title: "Family Content Control App",
     description:
-      "An aspirational toolkit for short-form creators who need content workflows, audience insights, and faster execution.",
-    tags: ["Product", "React", "CSS"],
-  },
-  {
-    id: 3,
-    title: "Wasteland Shooter Prototype",
-    description:
-      "A game design exploration focused on loot loops, survival tension, and strong visual world-building.",
-    tags: ["Game Dev", "Design", "Python"],
-  },
-  {
-    id: 4,
-    title: "Portfolio Rebuild",
-    description:
-      "A multi-page Next.js portfolio that upgrades a static personal page into a reusable React project structure.",
-    tags: ["React", "Next.js", "JavaScript"],
+      "A private sharing app designed for parents who want more control over what children watch. Parents can share selected media into the app, and family members can view that content inside a controlled environment built specifically for safe family sharing.",
+    tags: ["Family Tech", "Safety", "Product"],
   },
 ];
 
